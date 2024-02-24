@@ -1,9 +1,10 @@
-module github.com/projectdiscovery/clistats
+module github.com/sasha-kantoriz/clistats
 
 go 1.19
 
 require (
 	github.com/json-iterator/go v1.1.12
+	github.com/projectdiscovery/clistats v0.0.20
 	github.com/projectdiscovery/freeport v0.0.5
 	github.com/projectdiscovery/utils v0.0.54
 	github.com/stretchr/testify v1.8.4
