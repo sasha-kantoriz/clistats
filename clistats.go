@@ -169,10 +169,10 @@ func (s *Statistics) Start() error {
 		})
 
 		// check if the default port is available
-		port, err := freeport.GetPort(freeport.TCP, "127.0.0.1", s.Options.ListenPort)
+		port, err := freeport.GetPort(freeport.TCP, "0.0.0.0", s.Options.ListenPort)
 		if err != nil {
 			// otherwise picks a random one and update the options
-			port, err = freeport.GetFreeTCPPort("127.0.0.1")
+			port, err = freeport.GetFreeTCPPort("0.0.0.0")
 			if err != nil {
 				return err
 			}
